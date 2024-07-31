@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title> Medical Insurance Price Prediction</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: skyblue;
+        margin: 0;
+        padding: 0; /* Added padding to the body */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Align items at the top */
+        min-height: 100vh; /* Ensures full height */
+    }
+    .container {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background-color: white;
+    }
+    .header {
+        text-align: center;
+        background-color: #4cae4c;
+        color:white;
+        font-size:28px;
+        font-weight:bold;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .content {
+        padding: 40px;
+        text-align: center;
+    }
+    .display-4{
+        color:#0047AB;
+        font-weight:bold;
+        font-size:2.5rem;
+        margin: 20px 0;
+    }
+    .btn {
+        background-color: #0047AB;
+        color:white;
+        border:none;
+        padding: 10px 20px;
+        font-size:18px;
+        cursor:pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+        
+</style>
+<body>
+   <div class="container">
+        <div class="header">Medical Insurance Price Prediction</div>
+        <div class="content">
+                <h2> Predicted Insurance Price:</h2>
+                <p class="display-4"> $ {{ "{:.3f}".format(prediction) }} </p>
+                <a href="/" class="btn">Go back</a>
+        </div>
+   </div>
+</body>
+</html>            
